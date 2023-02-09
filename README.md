@@ -1,1 +1,3 @@
-# flutter_initial_package
+# base_project
+
+A new Flutter project.
