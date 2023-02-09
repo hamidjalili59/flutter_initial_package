@@ -4,10 +4,13 @@ import 'package:base_project/src/injectable/module_injection/main_modules_inject
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 import 'src/config/constants/general_constants.dart';
 
 void main() async {
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   await _startupSetup();
   runApp(Application());
 }
