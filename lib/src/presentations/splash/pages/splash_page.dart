@@ -12,10 +12,15 @@ class SplashPage extends StatelessWidget {
     FlutterNativeSplash.remove();
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.red,
         body: SizedBox(
           width: 1.sw,
           height: 1.sh,
+          child: Center(
+            child: Text(
+              'Initial page',
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
+          ),
         ),
       ),
     );

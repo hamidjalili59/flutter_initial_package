@@ -1,4 +1,3 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:base_project/src/config/constants/general_constants.dart';
 import 'package:base_project/src/config/routes/router.dart';
 import 'package:base_project/src/injectable/injectable.dart';
@@ -17,6 +16,9 @@ class Application extends StatelessWidget {
         minTextAdapt: true,
         builder: (_, __) {
           return MaterialApp.router(
+            theme: ThemeData(
+              colorSchemeSeed: Colors.blueAccent,
+            ),
             routerConfig: _appRouter.config(),
             // routerDelegate: _appRouter.delegate(),
             // routeInformationParser: _appRouter.defaultRouteParser(),
