@@ -1,53 +1,38 @@
-// **************************************************************************
-// AutoRouteGenerator
-// **************************************************************************
-
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
-// AutoRouteGenerator
+// AutoRouterGenerator
 // **************************************************************************
-//
+
 // ignore_for_file: type=lint
+// coverage:ignore-file
 
 part of 'router.dart';
 
-class _$AppRouter extends RootStackRouter {
+abstract class _$AppRouter extends RootStackRouter {
   _$AppRouter([GlobalKey<NavigatorState>? navigatorKey]) : super(navigatorKey);
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    SplashRoute.name: (routeData) {
-      return MaterialPageX<SplashPage>(
+    Splash.name: (routeData) {
+      return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const SplashPage(),
       );
     }
   };
-
-  @override
-  List<RouteConfig> get routes => [
-        RouteConfig(
-          '/#redirect',
-          path: '/',
-          redirectTo: '/splash',
-          fullMatch: true,
-        ),
-        RouteConfig(
-          SplashRoute.name,
-          path: '/splash',
-        ),
-      ];
 }
 
 /// generated route for
 /// [SplashPage]
-class SplashRoute extends PageRouteInfo<void> {
-  const SplashRoute()
+class Splash extends PageRouteInfo<void> {
+  const Splash({List<PageRouteInfo>? children})
       : super(
-          SplashRoute.name,
-          path: '/splash',
+          Splash.name,
+          initialChildren: children,
         );
 
-  static const String name = 'SplashRoute';
+  static const String name = 'Splash';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }

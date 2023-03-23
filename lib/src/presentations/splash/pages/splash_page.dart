@@ -1,7 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+@RoutePage(name: 'splash')
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
 
@@ -10,6 +12,7 @@ class SplashPage extends StatelessWidget {
     FlutterNativeSplash.remove();
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.red,
         body: SizedBox(
           width: 1.sw,
           height: 1.sh,
