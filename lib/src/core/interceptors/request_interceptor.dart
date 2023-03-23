@@ -1,8 +1,5 @@
-import 'package:base_project/src/config/constants/general_constants.dart';
 import 'package:base_project/src/config/utils/function_helper.dart';
-import 'package:base_project/src/injectable/injectable.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable
